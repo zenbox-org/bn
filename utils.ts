@@ -32,3 +32,5 @@ export function rangeBN(from: BNLike, to: BNLike, step: BNLike = one) {
 export function rangeBNS(to: BNLike, step: BNLike = one) {
   return rangeBN(0, to, step)
 }
+
+export const isEqualBN = (a: BN) => (b: BN) => a.eq(b)
