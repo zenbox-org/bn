@@ -1,4 +1,4 @@
-import { MathOutOfBounds } from '../../test/contracts/Math.errors'
+import { MathOutOfBounds } from './errors'
 import { BN, BNLike } from './index'
 
 export const add = (max: BNLike) => (a: BN, b: BN) => {

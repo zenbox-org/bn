@@ -1,5 +1,5 @@
-import { BN, BNLike } from './index'
 import { one, zero } from './constants'
+import { BN, BNLike } from './index'
 
 // BN.prototype[inspect.custom] = function () {
 //   return this.toString()
