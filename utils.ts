@@ -7,7 +7,7 @@ import { BN, BNLike } from './index'
 
 export const bn = BN.from
 
-export function sumBN(nums: BN[]) {
+export function sumBNs(nums: BN[]) {
   return nums.reduce((acc, num) => acc.add(num), BN.from(0))
 }
 
