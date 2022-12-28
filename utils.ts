@@ -19,6 +19,13 @@ export function getShare(value: BNLike, numerator: BNLike, denominator: BNLike) 
   return bn(value).mul(numerator).div(denominator)
 }
 
+/**
+ * numerator must be lte 100
+ */
+export function getPercent(value: BNLike, numerator: BNLike) {
+  return bn(value).mul(numerator).div(100)
+}
+
 export function rangeBN(from: BNLike, to: BNLike, step: BNLike = one) {
   let fromBN = bn(from)
   const result: BN[] = []
