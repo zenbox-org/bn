@@ -36,6 +36,8 @@ export function rangeBN(from: BNLike, to: BNLike, step: BNLike = one) {
   return result
 }
 
+export const maxBN = (a: BN, b: BN) => a.gt(b) ? a : b
+
 export function rangeBNS(to: BNLike, step: BNLike = one) {
   return rangeBN(0, to, step)
 }
