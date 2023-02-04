@@ -43,3 +43,5 @@ export function rangeBNS(to: BNLike, step: BNLike = one) {
 }
 
 export const isEqualBN = (a: BN) => (b: BN) => a.eq(b)
+
+export const isPositive = (n: BN) => n.gt(0)
