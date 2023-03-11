@@ -10,4 +10,8 @@ export const tenPow18 = ten.pow(18)
 
 export const uint256Max = BN.from(2).pow(256).sub(1)
 
+export const uint256MaxN = uint256Max.toBigInt()
+
 export const uint128Max = BN.from(2).pow(128).sub(1)
+
+export const uint128MaxN = uint128Max.toBigInt()
