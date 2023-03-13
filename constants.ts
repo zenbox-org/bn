@@ -15,3 +15,11 @@ export const uint256MaxN = uint256Max.toBigInt()
 export const uint128Max = BN.from(2).pow(128).sub(1)
 
 export const uint128MaxN = uint128Max.toBigInt()
+
+export const int256Max = BN.from(2).pow(255).sub(1) // IMPORTANT: 255, not 256 (because 1 bit is reserved for the sign)
+
+export const int256MaxN = int256Max.toBigInt()
+
+export const int256Min = zero.sub(BN.from(2).pow(255)) // IMPORTANT: 255, not 256 (because 1 bit is reserved for the sign)
+
+export const int256MinN = int256Min.toBigInt()
