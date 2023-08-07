@@ -1,5 +1,5 @@
 import { test } from '@jest/globals'
-import { expect } from '../utils/chai'
+import { expect } from '../chai/init'
 import { BN } from './index'
 import { sqrt } from './sqrt'
 import { bn } from './utils'
